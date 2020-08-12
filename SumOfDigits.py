@@ -8,7 +8,7 @@ def digital_root(n):
     #making our int n iterable
     for no in str(n):
         sum += int(no) 
-    while sum >10:
+    while sum >=10:
         sum = digital_root(sum)
     return sum
 
